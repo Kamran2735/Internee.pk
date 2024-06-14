@@ -1,0 +1,673 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+.btn {
+    cursor: pointer;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 175px; /* Add padding to the left side */
+    padding-right: 175px; /* Add padding to the right side */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    z-index: 1000;
+}
+
+nav {
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+/* Exception for header and nav */
+header, nav {
+    margin-left: 0px; /* Resetting the margin for header and nav */
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 0.5rem 1rem;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #28a745;
+}
+
+.btn.primary {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Main Section Styles */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem 2rem 2rem;
+}
+
+.home-left {
+    max-width: 50%;
+}
+
+.home-left h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.home-left p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.sponsors img {
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.home-right img {
+    max-width: 100%;
+    height: 700px;
+    border-radius: 10px;
+}
+
+/* About Section Styles */
+#about {
+    background-color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+#about p.about-text {
+    font-size: 1.4rem;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+/* Add the carousel styles here */
+.carousel-container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background: linear-gradient(135deg, #006600, #339933);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+.prev-btn1,
+.next-btn1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev-btn1 {
+    left: 10px;
+}
+
+.next-btn1 {
+    right: 10px;
+}
+
+.carousel {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.cardi {
+    
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+    margin: 0 1rem;
+    width: calc(25% - 2rem); /* Adjust width to fit four cards in the container */
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.cardi img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+    border-radius: 10px 10px 0 0;
+}
+
+.cardi h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.cardi p {
+    padding: 0 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cardi .btn {
+    width: 80%;
+    text-align: center;
+    margin-left: 7%;
+    margin-bottom: 1rem;
+    display: block;
+    padding: 0.5rem;
+    background-color: #006600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+
+.internship-cards {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    gap: 1rem;
+    flex-wrap: wrap;
+} 
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 320px;
+    text-align: center;
+}
+
+ .card img {
+    width: 320px;
+    height: 225px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card .btn {
+    width: 87%;
+    text-align: center;
+}
+
+/* Internship Section Styles */
+
+#internship {
+    background-color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#internship p {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+#internship p span {
+    font-weight: bold; /* To bold the specified text */
+}
+.internship-text {
+    max-width: 100%; /* Limits the width to 50% of the screen */
+    margin-left: 160px;
+    margin-right: 160px; /* Centers the paragraph horizontally */
+}
+#internship .internship-cards{
+    gap: 2.5rem;
+}
+#internship .card{
+    padding: 0;
+    width: 400px;
+    padding-bottom: 15px;
+}
+#internship .card img {
+    width: 400px;
+    height: 200px;
+}
+#internship .card .btn {
+    margin: 0 auto; /* This will center the button horizontally */
+    background-color: #28a745;
+    color: aliceblue;
+    width: 30%;
+}
+
+
+/* Blog Section Styles */
+
+#blog {
+    background-color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#blog h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+#blog p {
+    padding: 15px;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+#blog h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+#blog .card{
+    padding: 0;
+    width: 350px;
+}
+#blog .card img {
+    width: 100%;
+    height: 250px;
+}
+
+/* Task Portal Section Styles */
+#task-portal {
+    background-color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+#task-portal h2{
+    margin-left: 25px;
+    font-size: 1.4rem;
+    padding-bottom: 0;
+}
+#task-portal h3{
+    margin-left: 25px;
+    font-size: 1.4rem;
+    padding-bottom: 0;
+}
+#task-portal h1{
+    margin-left: 25px;
+    font-size: 3rem;
+}
+#task-portal p{
+    margin-left: 25px;
+    font-size: 1.2rem;
+}
+.portal-container {
+    display: flex;
+    align-items: center;
+}
+
+.portal-image {
+    width: 50%;
+    margin-right: 0;
+    border-radius: 10px;
+    animation: move-up-down 3s 2s infinite;
+}
+
+.portal-image:hover {
+    animation: slide-in 1s forwards ease-in;
+}
+.lms .portal-image{
+    height: 1000px;
+    animation: slide-in2 2s backwards, move-up-down 3s 2s infinite;
+    }
+.lms .portal-image:hover {
+        animation: slide-in 1s forwards ease-in;
+    }
+
+.portal-content {
+    max-width: 50%;
+}
+
+.portal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.portal-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; /* Adjust the gap between grid items if needed */
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust the container width if needed */
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 1rem; /* Adjust the gap between image and text */
+    padding: 1rem;
+    background-color: #f9f9f9; /* Optional: Add background color for each feature */
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+}
+
+.feature img.svg-img {
+    display: inline-block;
+    padding: 15px;
+    background-color: antiquewhite;
+    width: 50px; /* Adjust the size of the image if needed */
+    height: auto;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-content h3 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.feature-content p {
+    font-size: 1rem;
+    margin: 0;
+    text-align: justify;
+}
+
+#why ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 1em; /* Add padding for readability */
+  }
+  #safe ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 1em; /* Add padding for readability */
+  }
+
+#why ul li::before {
+    content: ""; /* Clear the default content */
+    display: inline-block; /* Make it inline */
+    width: 0.7em; /* Set width to control size */
+    height: 0.7em; /* Set height to control size */
+    background-color: green; /* Set color to green */
+    border-radius: 50%; /* Make it circular */
+    position: absolute; /* Position it absolutely */
+    top: 50%; /* Align it vertically */
+    left: 0; /* Align it with the start of the <li> */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+  }
+  #safe ul li::before {
+    content: ""; /* Clear the default content */
+    display: inline-block; /* Make it inline */
+    width: 0.5em; /* Set width to control size */
+    height: 0.5em; /* Set height to control size */
+    background-color: green; /* Set color to green */
+    border-radius: 50%; /* Make it circular */
+    position: absolute; /* Position it absolutely */
+    top: 50%; /* Align it vertically */
+    left: 0; /* Align it with the start of the <li> */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+  }
+    /* Define the style for list items */
+#why ul li {
+    margin-bottom: 0.5em; /* Add spacing between list items */
+    padding-left: 1.5em; /* Adjust padding to align text with bullet */
+    font-size: 1.7em;
+    position: relative; /* Position the bullet point */
+  }    
+    /* Define the style for list items */
+    #safe ul li {
+        margin-bottom: 0.5em; /* Add spacing between list items */
+        padding-left: 1.5em; /* Adjust padding to align text with bullet */
+        font-size: 1.5em;
+        position: relative; /* Position the bullet point */
+      } 
+
+/* Keyframes for animations */
+@keyframes slide-in {
+        0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slide-in2 {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes move-up-down {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+#reviews {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.carousel-container1 {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel1 {
+    display: flex;
+    margin-left: 75px;
+    margin-right: 75px;
+    transition: transform 0.5s ease;
+}
+
+.testimonial {
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin-right: 20px;
+    color: #f4f4f4;
+    background-color: #030000;
+    border-radius: 8px;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.source {
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+.source .name {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.source .location {
+    display: block;
+    font-size: 1.5em;
+    color: #f7f4f4;
+}
+
+.heading-img-container {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+}
+
+.heading-img-container img {
+    margin-right: 10px; /* Adjust spacing between image and text */
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column {
+    width: 15%;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.social-icons {
+    display: flex;
+    padding: 0;
+}
+
+.social-icons li {
+    margin-right: 10px;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info p:first-child {
+    font-weight: bold;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
