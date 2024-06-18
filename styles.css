@@ -216,7 +216,7 @@ header, nav {
     margin: 0 1rem;
     width: calc(25% - 2rem); /* Adjust width to fit four cards in the container */
     text-align: center;
-    height: 900px;
+    /* height: 900px; */
     flex-shrink: 0;
 }
 
@@ -408,16 +408,11 @@ header, nav {
     animation: move-up-down 3s 2s infinite;
 }
 
-.portal-image:hover {
-    animation: slide-in 1s forwards ease-in;
-}
+
 .lms .portal-image{
     height: 1000px;
-    animation: slide-in2 2s backwards, move-up-down 3s 2s infinite;
     }
-.lms .portal-image:hover {
-        animation: slide-in 1s forwards ease-in;
-    }
+
 
 .portal-content {
     max-width: 50%;
@@ -527,10 +522,9 @@ header, nav {
         font-size: 1.5em;
         position: relative; /* Position the bullet point */
       } 
-
 /* Keyframes for animations */
 @keyframes slide-in {
-        0% {
+    0% {
         transform: translateX(-100%);
     }
     100% {
@@ -553,6 +547,24 @@ header, nav {
         transform: translateY(-5px);
     }
 }
+
+.slide-in {
+    animation: slide-in 1s forwards ease-in;
+}
+
+.slide-in2 {
+    animation: slide-in2 1s forwards ease-in;
+}
+
+.portal-image-animated {
+    visibility: hidden; /* Start hidden and reveal on scroll */
+}
+
+.portal-image-animated.animated {
+    visibility: visible;
+}
+
+
 
 
 #reviews {

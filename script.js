@@ -209,3 +209,27 @@ document.addEventListener("DOMContentLoaded", function() {
   
     updateCarousel();
   });
+
+  // Function to add animation classes when elements come into the viewport
+const animateOnScroll = () => {
+    const elements = document.querySelectorAll('.portal-image-animated, .lms .portal-image-animated');
+    const windowHeight = window.innerHeight;
+    elements.forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        if (position < windowHeight - 100 && !el.classList.contains('animated')) {
+            if (el.classList.contains('portal-image-animated') && !el.closest('.lms')) {
+                el.classList.add('slide-in', 'animated');
+            } else if (el.closest('.lms') && el.classList.contains('portal-image-animated')) {
+                el.classList.add('slide-in2', 'animated');
+            }
+            el.classList.add('move-up-down'); // Add move-up-down animation
+        }
+    });
+};
+
+// Add event listeners for scroll and DOM content loaded
+window.addEventListener('scroll', animateOnScroll);
+document.addEventListener('DOMContentLoaded', animateOnScroll);
+
+// Initial check in case some elements are already in view
+animateOnScroll();
